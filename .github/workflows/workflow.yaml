@@ -3,10 +3,10 @@ name: PipelineWorkflow
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches: 
-      - main
+      - master
 
 jobs:
     build:
@@ -17,5 +17,5 @@ jobs:
           uses: Azure/pipelines@v1
           with:
             azure-devops-project-url: https://dev.azure.com/pattaniarpit0061/
-            azure-pipeline-name: 'pattaniarpit.gitapppublic'
+            azure-pipeline-name: 'actionsrun'
             azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
